@@ -26,4 +26,5 @@
     const result = getPropertyValue(user, 'name') 
 
     //ex:Constraint using keyof mane jekuno akta property holeo thakte hobe. Mane union litarel use kore jekono akta property thakte hobe. R constraints a sudu extend  a sob gula property thakte hobe 
+
 }
