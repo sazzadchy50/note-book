@@ -1,6 +1,5 @@
 {
   //utility types
-
   type Person = {
     name: string;
     age: number;
