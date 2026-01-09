@@ -28,6 +28,3 @@ Thumbs.db
 
 # TypeScript cache
 *.tsbuildinfo
-
-
-.vscode/
