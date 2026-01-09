@@ -30,7 +30,7 @@
       super(name, age, address);
     }
   }
-  const student1 = new Student("mr x", 20, "uganda");
+  const student1 = new Student('mr x', 20, 'uganda');
 
   class Teacher extends Parent {
     designation: string;
@@ -38,7 +38,7 @@
       name: string,
       age: number,
       address: string,
-      designation: string
+      designation: string,
     ) {
       super(name, age, address);
       this.designation = designation;
@@ -49,7 +49,7 @@
     }
   }
 
-  const Teacher1 = new Teacher("mr teacher", 25, "USA", "tea");
+  const Teacher1 = new Teacher('mr teacher', 25, 'USA', 'tea');
 
   console.log(Teacher1);
 }

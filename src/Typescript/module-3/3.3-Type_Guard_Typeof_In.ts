@@ -4,7 +4,7 @@
   type Alphanumeric = string | number;
 
   const add = (param1: Alphanumeric, param2: Alphanumeric): Alphanumeric => {
-    if (typeof param1 === "number" && typeof param2 === "number") {
+    if (typeof param1 === 'number' && typeof param2 === 'number') {
       return param1 + param2;
     } else {
       return param1.toString() + param2.toString();
@@ -21,11 +21,11 @@
   };
   type AdminUser = {
     name: string;
-    role: "admin";
+    role: 'admin';
   };
 
   const getUser = (user: NormalUser | AdminUser) => {
-    if ("role" in user) {
+    if ('role' in user) {
       console.log(`${user.name} is ${user.role}`);
     } else {
       console.log(`${user.name} is normal user`);
@@ -33,13 +33,12 @@
   };
 
   const normalUser: NormalUser = {
-    name: "mr x",
+    name: 'mr x',
   };
   const adminUser: AdminUser = {
-    name: "admin user",
-    role: "admin",
+    name: 'admin user',
+    role: 'admin',
   };
-   
-  getUser(adminUser)
-  
+
+  getUser(adminUser);
 }

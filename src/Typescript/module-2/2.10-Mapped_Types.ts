@@ -6,7 +6,7 @@
     width: number;
   };
 
-  type Height = areaNumber["height"]; // look up type
+  type Height = areaNumber['height']; // look up type
   //ex: same property ke onno type korte hole Mapped types er maddome new type kora jay.
 
   //      type areaString = {
@@ -25,14 +25,12 @@
   };
 
   const area1: FlexAbleType<{ height: string; width: number }> = {
-    height: "100",
+    height: '100',
     width: 50,
   };
 
-  const area2: { height:string, width: number } = {
-    height: "100",
+  const area2: { height: string; width: number } = {
+    height: '100',
     width: 50,
   };
-
-  
 }

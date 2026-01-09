@@ -6,17 +6,17 @@
   //const rollNumbers =
   const rollNumbers: GenericArray<number> = [2, 6, 8];
 
-  const mentors: GenericArray<string> = ["mr.x", "mr.y", "Mr.z"];
+  const mentors: GenericArray<string> = ['mr.x', 'mr.y', 'Mr.z'];
 
   const boolArray: GenericArray<boolean> = [true, false, true];
 
   const user: GenericArray<{ name: string; age: number }> = [
     {
-      name: "mezba",
+      name: 'mezba',
       age: 122,
     },
     {
-      name: "jonkar",
+      name: 'jonkar',
       age: 100,
     },
   ];
@@ -26,8 +26,11 @@
 
   //generic tuple
 
-  type GenericTuple<X,Y>=[X , Y]
-  const manush:GenericTuple<string,string> = ["mr.x", "mr.y",]
+  type GenericTuple<X, Y> = [X, Y];
+  const manush: GenericTuple<string, string> = ['mr.x', 'mr.y'];
 
-  const userWithID:GenericTuple<number,{name:string, email:string}> = [1233,{name: 'sazzad',email:'sazzzad@gamil.com'}]
+  const userWithID: GenericTuple<number, { name: string; email: string }> = [
+    1233,
+    { name: 'sazzad', email: 'sazzzad@gamil.com' },
+  ];
 }

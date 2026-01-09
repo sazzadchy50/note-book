@@ -1,7 +1,7 @@
 {
   //Generic with interface
 
-  interface Developer<T,X= null> {
+  interface Developer<T, X = null> {
     name: string;
     computer: {
       brand: string;
@@ -9,24 +9,25 @@
       releaseYear: number;
     };
     smartWatch: T;
-    bike?: X
+    bike?: X;
   }
 
   const poordeveloper: Developer<{
     brand: string;
     model: string;
     display: string;
-  }> = {    //  Default parameter na thakle Argument a null ba undefined dite hobe 
-    name: "poor",
+  }> = {
+    //  Default parameter na thakle Argument a null ba undefined dite hobe
+    name: 'poor',
     computer: {
-      brand: "walton",
-      model: "A1o",
+      brand: 'walton',
+      model: 'A1o',
       releaseYear: 2020,
     },
     smartWatch: {
-      brand: "Emilab",
-      model: "Kw66",
-      display: "OLED",
+      brand: 'Emilab',
+      model: 'Kw66',
+      display: 'OLED',
     },
   };
 
@@ -37,27 +38,27 @@
     heartTrack: boolean;
     sleepTrack: boolean;
   };
-  interface YamahaBike{
+  interface YamahaBike {
     model: string;
     engineCapacity: string;
   }
 
-  const richdeveloper: Developer<AppleWatch, YamahaBike > = {
-    name: "Rich",
+  const richdeveloper: Developer<AppleWatch, YamahaBike> = {
+    name: 'Rich',
     computer: {
-      brand: "Apple",
-      model: "A1",
+      brand: 'Apple',
+      model: 'A1',
       releaseYear: 2022,
     },
     smartWatch: {
-      brand: "apple",
-      model: "AWatch",
+      brand: 'apple',
+      model: 'AWatch',
       heartTrack: true,
       sleepTrack: true,
     },
-    bike:{
-      model: "Yamaha",
-      engineCapacity: '160cc'
-    }
+    bike: {
+      model: 'Yamaha',
+      engineCapacity: '160cc',
+    },
   };
 }

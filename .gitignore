@@ -1,0 +1,33 @@
+# Node modules (এগুলো কখনো commit করা যাবে না)
+node_modules/
+
+# Output directories
+dist/
+build/
+
+# Env files (secret রাখার জন্য)
+.env 
+
+# Logs
+*.log
+npm-debug.log*fff
+yarn-debug.log*
+yarn-error.log*
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# TypeScript cache
+*.tsbuildinfo
+
+
+.vscode/

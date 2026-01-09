@@ -4,9 +4,12 @@
   class Animal {
     //parent class
 
-    constructor(public name: string, public species: string) {}
+    constructor(
+      public name: string,
+      public species: string,
+    ) {}
     makeSound() {
-      console.log("this is parent");
+      console.log('this is parent');
     }
   }
 
@@ -15,7 +18,7 @@
       super(name, species);
     }
     MakeBerk() {
-      console.log("I am barking");
+      console.log('I am barking');
     }
   }
 
@@ -24,7 +27,7 @@
       super(name, species);
     }
     makeMeaw() {
-      console.log("I am meawing");
+      console.log('I am meawing');
     }
   }
 
@@ -54,8 +57,8 @@
       animal.makeSound();
     }
   };
-  const dog = new Dog("Dog bhai", "dog");
-  const cat = new Cat("Cat bhai", "cat");
+  const dog = new Dog('Dog bhai', 'dog');
+  const cat = new Cat('Cat bhai', 'cat');
 
   getAnimal(cat);
 
