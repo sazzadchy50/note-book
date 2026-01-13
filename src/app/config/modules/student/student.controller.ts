@@ -37,6 +37,9 @@ const getAllStudents = async (req: Request, res: Response) => {
 const getSingleStudent = async (req: Request, res: Response) => {
   try {
     const { studentId } = req.params;
+    if(!studentId){
+      throw new Error("studentId is required")
+    }
     const result = await StudentServices.getSingleStudentFromDB(studentId);
     res.status(200).json({
       success: true,
