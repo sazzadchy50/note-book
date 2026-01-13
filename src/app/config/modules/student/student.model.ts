@@ -5,7 +5,7 @@ import type {
   Student,
  
   userName,
-} from './student.interface.js';
+} from './student.interface';
 
 const userNameSchema = new Schema<userName>({
   firstName: { type: String},
